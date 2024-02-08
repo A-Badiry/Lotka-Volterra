@@ -1,14 +1,25 @@
 #include "G_dataTypes.h"
 
 
+data *start = NULL;
+data *head = NULL;
+data *end = NULL;
 
-//alpha : 
+double* alpha = NULL;
+double* beta = NULL;
+double* delta = NULL;
+double* gamma = NULL;
 
 
 int main (void)
 {
     int H0_v, F0_v, days_v;
     double alpha_v, beta_v, delta_v, gamma_v;
+    alpha = &alpha_v;
+    beta = &beta_v;
+    delta = &delta_v;
+    gamma = &gamma_v;
+
 
     printf("Please input the hare initial population: ");
     scanf("%i", &H0_v);
@@ -20,21 +31,21 @@ int main (void)
     scanf("%i", &days_v);
 
     printf("\nPlease input the growth rate of the hares: ");
-    scanf("%lf", &alpha_v);
+    scanf("%lf", alpha);
 
     printf("\nPlease input the effect of predators on prey: ");
-    scanf("%lf", &beta_v);
+    scanf("%lf", beta);
 
     printf("\nPlease input the effect of prey on predators: ");
-    scanf("%lf", &delta_v);
+    scanf("%lf", delta);
 
     printf("\nPlease input the death rate of foxes: ");
-    scanf("%lf", &gamma_v);
+    scanf("%lf", gamma);
 
 
-    CalculateChange(H0_v, F0_v, days_v, 0.01, alpha_v, beta_v, delta_v, gamma_v);
+    CalculateChange(H0_v, F0_v, days_v, 0.5);
 
-    Plot(start, days_v, 0.01);
+    Plot(start, days_v, 0.5);
 
     return 0;
 }

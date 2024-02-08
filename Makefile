@@ -1,7 +1,7 @@
 CC = g++-13
 CFLAGS = -Wall -Wextra -g
 OUTPUT = test
-OBJECTS = GetInput.o Plot.o main.o
+OBJECTS = main.o GetInput.o Plot.o
 
 
 all: $(OUTPUT)
