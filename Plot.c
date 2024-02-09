@@ -52,7 +52,7 @@ void Plot (data* coordinates, int days, float time_step)
 
     }
 
-    fclose(GNUpipe1);
+    pclose(GNUpipe1);
 
     return;
 
