@@ -60,28 +60,15 @@ void CalculateChange(int H0, int F0, int days, float delta_t)
         K4X = delta_t * DxDt(H + K3X, F + K3Y);
         K4Y = delta_t * DyDt(H + K3X, F + K3Y);
 
-        test = 1/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
+        test = 1.0/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
 
-        H += 1/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
-        F += 1/6 * (K1Y + 2 * K2Y + 2 * K3Y + K4Y);
+        H += 1.0/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
+        F += 1.0/6 * (K1Y + 2 * K2Y + 2 * K3Y + K4Y);
 
         AddElement(H, i, 'h');
         AddElement(F, i, 'f');
 
     }
 
-    
-
-   /* for(float t= delta_t; t<= days; t+= delta_t)
-    {
-        previous_hare_population_v = current_hare_population_v;
-        current_hare_population_v += current_hare_population_v * delta_t * (alpha - beta*current_fox_population_v);
-        current_fox_population_v += current_fox_population_v * delta_t * (delta*previous_hare_population_v - gamma);
-        
-        AddElement(current_hare_population_v, t, 'h');
-        AddElement(current_fox_population_v, t, 'f');
-
-    }
-    */
 
 }
