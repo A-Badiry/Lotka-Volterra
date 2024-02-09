@@ -52,6 +52,10 @@ void Plot (data* coordinates)
 
 
     pclose(GNUpipe1);
+    pclose(GNUpipe2);
+    fclose(hare_data);
+    fclose(fox_data);
+    fclose(hare_fox_data);
 
     return;
 
