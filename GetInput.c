@@ -1,16 +1,5 @@
 #include "G_dataTypes.h"
 
-
-double DxDt (double H, double F)
-{
-    return H * ((*alpha) - (*beta) * F);
-}
-
-double DyDt (double H, double F)
-{
-    return F * ((*delta) * H -(*gamma));
-}
-
 void AddElement(double population, double time, char type)
 {
     data* new_object = (data*)malloc(sizeof(data));
@@ -35,13 +24,33 @@ void AddElement(double population, double time, char type)
     }
 }
 
+void DeleteLL(data* head)
+{
+    while(head != NULL)
+    {
+        start = head;
+        head = (*head).next;
+        free(start);
+    }
+}
+
+double DxDt (double H, double F)
+{
+    return H * ((*alpha) - (*beta) * F);
+}
+
+double DyDt (double H, double F)
+{
+    return F * ((*delta) * H -(*gamma));
+}
+
+
 void CalculateChange(int H0, int F0, int days, float delta_t)
 {
 
     long double K1X, K1Y, K2X, K2Y, K3X, K3Y, K4X, K4Y;
     double F = F0;
     double H = H0;
-    double test;
     AddElement(H0, 0, 'h');
     AddElement(F0, 0, 'f');
 
@@ -59,8 +68,6 @@ void CalculateChange(int H0, int F0, int days, float delta_t)
 
         K4X = delta_t * DxDt(H + K3X, F + K3Y);
         K4Y = delta_t * DyDt(H + K3X, F + K3Y);
-
-        test = 1.0/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
 
         H += 1.0/6 * (K1X + 2 * K2X + 2 * K3X + K4X);
         F += 1.0/6 * (K1Y + 2 * K2Y + 2 * K3Y + K4Y);

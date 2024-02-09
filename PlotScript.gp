@@ -1,5 +1,12 @@
-# gnuplot script
-set title 'Visualization of the hare and fox population'
-set xlabel 'Time (in days)'
-set ylabel 'population'
-plot 'Hdata.dat' using 2:1 with lines, 'Fdata.dat' using 2:1 with lines
+#Plot title
+set title "Visualization of Lotka-Volterra model"
+
+
+#Axes labels
+set xlabel 'Time(days)'
+set ylabel 'Population'
+
+
+plot 'Hdata.dat' with lines title 'Hare Population',\
+     'Fdata.dat' with lines title 'Fox Population'
+

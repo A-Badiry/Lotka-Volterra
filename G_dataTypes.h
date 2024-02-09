@@ -26,6 +26,7 @@ extern double *alpha,
 
 void CalculateChange(int H0, int F0, int days, float delta_t);
 void AddElement(double population, double time, char type);
-void Plot (data* coordinates, int days, float time_step);
+void Plot (data* coordinates);
+void DeleteLL(data* head);
 
 #endif
