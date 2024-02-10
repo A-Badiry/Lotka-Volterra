@@ -5,14 +5,10 @@ This small project implements the Lotka-Volterra model to calculate the populati
 1. **Predator-Prey Model:**
    - Lotka-Volterra equations describe a simple predator-prey model. Here's how they are represented:
 
-    $$
-    \frac{dx}{dt} = \alpha x - \beta xy
-    $$
+    $$\frac{dx}{dt} = \alpha x - \beta xy$$
     
-    $$
-    \frac{dy}{dt} = \delta xy - \gamma y
-    $$
-
+    $$\frac{dy}{dt} = \delta xy - \gamma y$$
+    
     where :
    - $\(x\)$ is the population of Hares,
    - $\(y\)$ is the population of Foxes,
