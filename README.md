@@ -47,7 +47,7 @@ This small project implements the Lotka-Volterra model to calculate the populati
 
 ## Example
 
-```vbnet
+```zsh
 Enter the initial population of Hares: 100
 Enter the initial population of Foxes: 40
 Enter the number of days for which to track the populations: 100
