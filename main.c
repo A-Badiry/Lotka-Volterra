@@ -1,3 +1,14 @@
+/**
+ * @file main.c
+ * @author Badiry Achraf (achraf.badiry@edu.bme.hu)
+ * @brief 
+ * @version 0.1
+ * @date 2024-02-10
+ * 
+ * @copyright GNU General Public License 2024
+ * 
+ */
+
 #include "G_dataTypes.h"
 
 
