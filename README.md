@@ -14,12 +14,12 @@ This small project implements the Lotka-Volterra model to calculate the populati
     $$
 
     where :
-   - \(x\) is the population of Hares,
-   - \(y\) is the population of Foxes,
-   - \(\alpha\) represents the birth rate of Hares,
-   - \(\beta\) represents the predation rate,
-   - \(\delta\) represents the rate of successful predation,
-   - \(\gamma\) represents the death rate of Foxes.
+   - $\(x\)$ is the population of Hares,
+   - $\(y\)$ is the population of Foxes,
+   - $\(\alpha\)$ represents the birth rate of Hares,
+   - $\(\beta\)$ represents the predation rate,
+   - $\(\delta\)$ represents the rate of successful predation,
+   - $\(\gamma\)$ represents the death rate of Foxes.
 
 
 ## How to Use
