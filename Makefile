@@ -1,6 +1,6 @@
 CC = g++-13
 CFLAGS = -Wall -Wextra -g
-OUTPUT = test
+OUTPUT = Model
 OBJECTS = main.o GetInput.o Plot.o
 
 
