@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['plot_0',['Plot',['../_g__data_types_8h.html#a3512798642dd78d5622f9321ee541c2c',1,'Plot(data *coordinates):&#160;Plot.c'],['../_plot_8c.html#a3512798642dd78d5622f9321ee541c2c',1,'Plot(data *coordinates):&#160;Plot.c']]],
-  ['plot_2ec_1',['Plot.c',['../_plot_8c.html',1,'']]]
+  ['hare_20fox_20population_20calculator_0',['Hare-Fox Population Calculator',['../index.html',1,'']]],
+  ['how_20to_20use_1',['How to Use',['../index.html#autotoc_md1',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lotka_20volterra_20model_0',['Lotka-Volterra model',['../index.html',1,'']]]
+  ['calculator_0',['Hare-Fox Population Calculator',['../index.html',1,'']]]
 ];

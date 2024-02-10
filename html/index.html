@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lotka-Volterra model: Lotka-Volterra model</title>
+<title>Lotka-Volterra model: Hare-Fox Population Calculator</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,10 +72,72 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Lotka-Volterra model </div></div>
+  <div class="headertitle"><div class="title">Hare-Fox Population Calculator </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> This small project implements the Lotka-Volterra model to calculate the population dynamics of Hares and Foxes based on user-input parameters. The model is a classic predator-prey system that simulates the interactions between the two species over time.</p>
+<ol type="1">
+<li><b>Predator-Prey Model:</b><ul>
+<li><p class="startli">Lotka-Volterra equations describe a simple predator-prey model. Here's how they are represented:</p>
+<p class="startli">$$\frac{dx}{dt} = \alpha x - \beta xy$$</p>
+<p class="startli">$$\frac{dy}{dt} = \delta xy - \gamma y$$</p>
+<p class="startli">where :</p>
+</li>
+<li>$ is the population of Hares,</li>
+<li>$ is the population of Foxes,</li>
+<li>$(\alpha)$ represents the birth rate of Hares,</li>
+<li>$(\beta)$ represents the predation rate,</li>
+<li>$(\delta)$ represents the rate of successful predation,</li>
+<li>$(\gamma)$ represents the death rate of Foxes.</li>
+</ul>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md1"></a>
+How to Use</h1>
+<ol type="1">
+<li><b>Clone the Repository:</b> <div class="fragment"><div class="line">git clone https://github.com/A-Badiry/Lotka-Volterra</div>
+<div class="line">cd Lotka-Volterra</div>
+</div><!-- fragment --></li>
+<li><b>Compile and Run the Program:</b> <div class="fragment"><div class="line">make</div>
+<div class="line">./Model</div>
+</div><!-- fragment --></li>
+<li><b>Input Parameters:</b><ul>
+<li>Enter the initial population of Hares (INTEGER).</li>
+<li>Enter the initial population of Foxes (INTEGER).</li>
+<li>Enter the number of days for which to track the populations (INTEGER).</li>
+<li>Set the birth rate of Hares (alpha - DOUBLE).</li>
+<li>Set the effect of predators on prey (beta - DOUBLE).</li>
+<li>Set the effect of prey on predators (delta - DOUBLE)</li>
+<li>Set the death rate of Foxes (gamma - DOUBLE).</li>
+</ul>
+</li>
+<li><b>View Results:</b> The program will simulate the population dynamics over time using the Lotka-Volterra model and display the results using the "gnuplot" and "Qt" as the terminal output. Two graphs would be generated, one represent the change of both Hares and Foxes populations in the same graph, the other would represent the phase graph of the Hares and Foxes.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Example</h1>
+<div class="fragment"><div class="line">Enter the initial population of Hares: 100</div>
+<div class="line">Enter the initial population of Foxes: 40</div>
+<div class="line">Enter the number of days for which to track the populations: 100</div>
+<div class="line"> </div>
+<div class="line">Set the birth rate of Hares (alpha): 1.2</div>
+<div class="line">Set the effect of predators on prey (beta): 0.01</div>
+<div class="line">Set the effect of prey on predators (delta): 0.01</div>
+<div class="line">Set the death rate of Foxes (gamma): 0.5</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+Dependencies</h1>
+<ul>
+<li>GNUplot graphing utility.</li>
+<li>Qt Framework.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Documentation</h1>
+<ul>
+<li>To check the project's documentation, the user needs to open the "html" directory and open (in any browser) the "index.html" file</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+License</h1>
+<p>This project is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">the GNU General Public license</a></p>
+<p>Feel free to report any issues at <a href="#" onclick="location.href='mai'+'lto:'+'ach'+'ra'+'f.b'+'ad'+'iry'+'@e'+'du.'+'bm'+'e.h'+'u'; return false;">achra<span class="obfuscator">.nosp@m.</span>f.ba<span class="obfuscator">.nosp@m.</span>diry@<span class="obfuscator">.nosp@m.</span>edu.<span class="obfuscator">.nosp@m.</span>bme.h<span class="obfuscator">.nosp@m.</span>u</a> </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->

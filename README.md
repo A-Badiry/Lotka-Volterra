@@ -50,7 +50,7 @@ This small project implements the Lotka-Volterra model to calculate the populati
 ```bash
 Enter the initial population of Hares: 100
 Enter the initial population of Foxes: 40
-Enter the number of days for which to track the populations: 100
+Enter the number of days "for" which to track the populations: 100
 
 Set the birth rate of Hares (alpha): 1.2
 Set the effect of predators on prey (beta): 0.01
@@ -62,6 +62,9 @@ Set the death rate of Foxes (gamma): 0.5
 
 - GNUplot graphing utility.
 - Qt Framework.
+
+## Documentation
+- To check the project's documentation, the user needs to open the "html" directory and open (in any browser) the "index.html" file
 
 ## License
 
